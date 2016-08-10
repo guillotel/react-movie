@@ -13,6 +13,7 @@ let API = {
           original_title,
           overview,
           id,
+          release_date,
           status
         }
       }

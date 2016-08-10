@@ -12,7 +12,7 @@ import {
 
 import fetch from 'isomorphic-fetch';
 import KEYS from "../utils/KEYS";
-const SOURCE = `http://api.themoviedb.org/3/discover/movie?api_key=${KEYS.API_KEY}&year=2016&sort_by=popularity.desc`;
+const SOURCE = `http://api.themoviedb.org/3/discover/movie?api_key=${KEYS.API_KEY}&sort_by=popularity.desc`;
 
 let movieType = new GraphQLObjectType({
   name: "Movie",
