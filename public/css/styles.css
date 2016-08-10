@@ -1,5 +1,28 @@
+body {
+	background-color: #000;
+}
+.container-fluid {
+	margin-bottom: 20px;
+}
 .actor{
 	width:25%;
+	padding: 10px;
+}
+@media (min-width: 768px) {
+	.modal-dialog {
+	    width: 1090px;
+	    margin: 30px auto;
+	}
+}
+@media (max-width: 1200px) {
+	.modal-dialog {
+	    width: auto;
+	    margin: 30px 10px;
+	}
+}
+
+.modal-footer {
+	border: none;
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-content {
@@ -12,12 +35,10 @@
 }
 
 .btn {
-	border: 3px solid grey;
-	font-weight: 700;
+	border: 3px solid #d22020;
 	background:none;
-	color: grey;
+	color: #d22020;
 	letter-spacing: 1px;
-	border-radius: 25px;
 	text-transform: uppercase;
 }
 
@@ -47,8 +68,8 @@
 	color: #0099cc;
 }
 
-#top1 {
-	padding:100px 0;
+#topBanner {
+	padding: 140px 0;
 	text-align: center;
 	background: url('../imgs/theater.jpg') no-repeat;
 	background-position: center center;
