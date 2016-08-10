@@ -36,9 +36,7 @@ class Poster extends Component {
             <img className="posterImage" src= {url}/>
           </div>
           <div className="overlay-text">
-            <p>{original_title}</p>
-            <p><span>{vote_average}</span>/10
-            <span>({vote_count} votes)</span></p>
+            <h4>{original_title}</h4>
           </div>
         </div>
         {showModal ? <PosterModal

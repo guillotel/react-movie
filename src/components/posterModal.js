@@ -11,7 +11,8 @@ const propTypes = {
       vote_average: PropTypes.number.isRequired,
       vote_count: PropTypes.number.isRequired,
       overview: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired
+      id: PropTypes.string.isRequired,
+      release_date: PropTypes.string.isRequired
     })
 };
 
@@ -24,6 +25,7 @@ class PosterModal extends Component {
       vote_count,
       overview,
       id,
+      release_date,
     } = this.props.movie;
 
     return (
@@ -39,10 +41,8 @@ class PosterModal extends Component {
           </div>
           <div className="col-lg-9">
             <h2>{original_title }</h2>
-            <p><span >{vote_average}</span>/10
-            <span>({vote_count} votes)</span>
-            <span>{overview}</span>
-            <span>{status}</span></p>
+            <h5>Note: {vote_average}/10 ({vote_count} votes) | Release Date: ({release_date})</h5>
+            <p><span>{overview}</span></p>
             <Actors id={id}/>
           </div>
         </Modal.Body>

@@ -47,7 +47,7 @@ class Actors extends Component {
   render() {
     return (
       <div>
-        <h1>Actors: {this.props.id}</h1>
+        <h2>Cast</h2>
 	{this.state.actors ? this.createActorImages() : "loading ..."}
 	</div>
     )
