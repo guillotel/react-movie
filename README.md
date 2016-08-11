@@ -22,6 +22,14 @@ let KEYS = {
 
 export default KEYS;
 ```
+
+<img
+  alt="react-movie"
+  src="https://paul.li/box/img/react-movie.jpg"
+  width="100%"
+/>
+
+
 Lastly do the following in two different terminal sessions:
 
 To start the node server
@@ -36,3 +44,5 @@ npm run devbuild
 You should have a dev server running on port 8888.
 
 Open your browser and go to http://localhost:8888
+
+To play with the GraphiQL go to http://localhost:8888/graphql
